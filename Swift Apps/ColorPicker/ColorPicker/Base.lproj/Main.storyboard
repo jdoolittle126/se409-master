@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ByW-qZ-dyr">
+                                <rect key="frame" x="25" y="49" width="974" height="1272"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehQ-4C-Jso">
+                                        <rect key="frame" x="0.0" y="0.0" width="974" height="993"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-fb-h4g">
+                                        <rect key="frame" x="0.0" y="993" width="974" height="279"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" id="cN2-Gk-YCg">
+                                                <rect key="frame" x="0.0" y="0.0" width="974" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yeJ-dw-FYJ">
+                                                        <rect key="frame" x="-2" y="0.0" width="978" height="32"/>
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="SliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fMb-LL-9gg"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gLm-xX-7ex">
+                                                        <rect key="frame" x="974" y="0.0" width="2" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="SwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="4ed-wB-wdn"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="tql-Uq-IQG"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" id="q2L-cG-nV3">
+                                                <rect key="frame" x="0.0" y="31" width="974" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EL5-bT-pB4">
+                                                        <rect key="frame" x="-2" y="0.0" width="929" height="32"/>
+                                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                                        <connections>
+                                                            <action selector="SliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="SpZ-PS-x6m"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="88I-Rx-6ZV">
+                                                        <rect key="frame" x="925" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemGreenColor"/>
+                                                        <connections>
+                                                            <action selector="SwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="181-i7-OGP"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="1in-mz-mqz"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAa-z9-C6B">
+                                                <rect key="frame" x="0.0" y="62" width="974" height="31"/>
+                                                <subviews>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="s8D-fe-ECa">
+                                                        <rect key="frame" x="-2" y="0.0" width="929" height="32"/>
+                                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                                        <connections>
+                                                            <action selector="SliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="u7J-mc-7bo"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FZJ-Gh-SO5">
+                                                        <rect key="frame" x="925" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemBlueColor"/>
+                                                        <connections>
+                                                            <action selector="SwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QW5-iF-pjj"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVM-Pw-CJ1">
+                                                <rect key="frame" x="0.0" y="93" width="974" height="186"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Reset">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ResetUi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TWv-aY-ctK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1ww-fb-h4g" firstAttribute="top" secondItem="ehQ-4C-Jso" secondAttribute="bottom" constant="25" id="8Dy-je-t0g"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ByW-qZ-dyr" secondAttribute="bottom" constant="25" id="Amr-r9-FgO"/>
+                            <constraint firstItem="ByW-qZ-dyr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Vzm-lJ-pX4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ByW-qZ-dyr" secondAttribute="trailing" constant="25" id="Wxg-k4-bYn"/>
+                            <constraint firstItem="ByW-qZ-dyr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="bbG-Os-WZZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BlueSlider" destination="s8D-fe-ECa" id="biB-kj-1LQ"/>
+                        <outlet property="BlueSwitch" destination="FZJ-Gh-SO5" id="VY0-Xx-DGY"/>
+                        <outlet property="ColorView" destination="ehQ-4C-Jso" id="NXW-4S-Hjt"/>
+                        <outlet property="GreenSlider" destination="EL5-bT-pB4" id="DbU-QG-DJH"/>
+                        <outlet property="GreenSwitch" destination="88I-Rx-6ZV" id="KqH-Hh-2NI"/>
+                        <outlet property="RedSlider" destination="yeJ-dw-FYJ" id="pW5-Px-IBE"/>
+                        <outlet property="RedSwitch" destination="gLm-xX-7ex" id="wLi-tH-aab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.882812499999996" y="69.838945827232791"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
