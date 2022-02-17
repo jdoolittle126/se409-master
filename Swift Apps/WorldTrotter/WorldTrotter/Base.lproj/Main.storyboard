@@ -15,13 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UqX-oj-tQS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UqX-oj-tQS">
                                 <rect key="frame" x="59.5" y="145.5" width="295" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8u-W8-KOf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8u-W8-KOf">
                                 <rect key="frame" x="150" y="196.5" width="114" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
@@ -33,8 +33,8 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFl-lZ-dkB">
-                                <rect key="frame" x="84" y="339.5" width="246" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFl-lZ-dkB">
+                                <rect key="frame" x="84.5" y="339.5" width="245.5" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -57,14 +57,19 @@
                             <constraint firstItem="F8u-W8-KOf" firstAttribute="centerX" secondItem="UqX-oj-tQS" secondAttribute="centerX" id="1dF-xp-3qy"/>
                             <constraint firstItem="UqX-oj-tQS" firstAttribute="top" secondItem="w5O-2c-xin" secondAttribute="bottom" constant="8" id="2mc-dY-GRi"/>
                             <constraint firstItem="a12-J2-5fg" firstAttribute="centerX" secondItem="UqX-oj-tQS" secondAttribute="centerX" id="66G-vY-1Ly"/>
+                            <constraint firstItem="xFl-lZ-dkB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EdH-W5-rRJ"/>
                             <constraint firstItem="F8u-W8-KOf" firstAttribute="centerX" secondItem="UqX-oj-tQS" secondAttribute="centerX" id="Iz3-wB-gUh"/>
                             <constraint firstItem="xFl-lZ-dkB" firstAttribute="centerX" secondItem="UqX-oj-tQS" secondAttribute="centerX" id="MYg-ft-AWC"/>
                             <constraint firstItem="xFl-lZ-dkB" firstAttribute="centerX" secondItem="UqX-oj-tQS" secondAttribute="centerX" id="NBl-Td-FEG"/>
                             <constraint firstItem="a12-J2-5fg" firstAttribute="top" secondItem="F8u-W8-KOf" secondAttribute="bottom" constant="8" id="SRf-Nb-9Xp"/>
                             <constraint firstItem="w5O-2c-xin" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W6p-kP-tQv"/>
                             <constraint firstItem="a12-J2-5fg" firstAttribute="centerX" secondItem="UqX-oj-tQS" secondAttribute="centerX" id="WgU-Br-pbU"/>
+                            <constraint firstItem="UqX-oj-tQS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZKT-6K-3TM"/>
                             <constraint firstItem="xFl-lZ-dkB" firstAttribute="top" secondItem="a12-J2-5fg" secondAttribute="bottom" constant="8" id="Zp7-BJ-zIH"/>
+                            <constraint firstItem="w5O-2c-xin" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cpe-hY-RsO"/>
                             <constraint firstItem="F8u-W8-KOf" firstAttribute="top" secondItem="UqX-oj-tQS" secondAttribute="bottom" constant="8" id="fuE-l5-gpL"/>
+                            <constraint firstItem="a12-J2-5fg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g4U-Nl-RvT"/>
+                            <constraint firstItem="F8u-W8-KOf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="l5l-gT-0l6"/>
                             <constraint firstItem="w5O-2c-xin" firstAttribute="centerX" secondItem="UqX-oj-tQS" secondAttribute="centerX" id="rbs-OT-u7A"/>
                             <constraint firstItem="w5O-2c-xin" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="v9I-zB-SoH"/>
                         </constraints>
@@ -90,14 +95,10 @@
         <!--Map-->
         <scene sceneID="jbp-d5-ab6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AUW-Qf-GoM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="16v-lz-6IV" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="vGl-wW-jKx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="SI8-Ra-yGE"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUW-Qf-GoM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1584.057971014493" y="115.84821428571428"/>
         </scene>
@@ -107,6 +108,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="I2x-Vo-tW6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TpU-1k-Tav">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
