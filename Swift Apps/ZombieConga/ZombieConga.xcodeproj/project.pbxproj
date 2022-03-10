@@ -19,6 +19,9 @@
 		901F34C027D06C5F0082D125 /* hitCat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 901F34BB27D06C5F0082D125 /* hitCat.wav */; };
 		901F34C127D06C5F0082D125 /* hitCatLady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 901F34BC27D06C5F0082D125 /* hitCatLady.wav */; };
 		901F34C227D06C5F0082D125 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 901F34BD27D06C5F0082D125 /* backgroundMusic.mp3 */; };
+		90A1535C27D96D9C00806EFE /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A1535B27D96D9C00806EFE /* GameOverScene.swift */; };
+		90A1535E27D9727E00806EFE /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A1535D27D9727E00806EFE /* MainMenuScene.swift */; };
+		90A1536027D97A9000806EFE /* GLIMSTIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 90A1535F27D979F600806EFE /* GLIMSTIC.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,10 @@
 		901F34BB27D06C5F0082D125 /* hitCat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCat.wav; sourceTree = "<group>"; };
 		901F34BC27D06C5F0082D125 /* hitCatLady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCatLady.wav; sourceTree = "<group>"; };
 		901F34BD27D06C5F0082D125 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		90A1535B27D96D9C00806EFE /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		90A1535D27D9727E00806EFE /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		90A1535F27D979F600806EFE /* GLIMSTIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GLIMSTIC.TTF; sourceTree = "<group>"; };
+		90A1536127D97AE400806EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +74,18 @@
 		901F349E27D04EDD0082D125 /* ZombieConga */ = {
 			isa = PBXGroup;
 			children = (
+				90A1536127D97AE400806EFE /* Info.plist */,
 				901F34B827D06C5E0082D125 /* Sounds */,
 				901F349F27D04EDD0082D125 /* AppDelegate.swift */,
 				901F34A527D04EDD0082D125 /* GameScene.swift */,
+				90A1535D27D9727E00806EFE /* MainMenuScene.swift */,
+				90A1535B27D96D9C00806EFE /* GameOverScene.swift */,
 				901F34B627D05C7E0082D125 /* MyUtils.swift */,
 				901F34A727D04EDD0082D125 /* GameViewController.swift */,
 				901F34A927D04EDD0082D125 /* Main.storyboard */,
 				901F34AC27D04EDF0082D125 /* Assets.xcassets */,
 				901F34AE27D04EDF0082D125 /* LaunchScreen.storyboard */,
+				90A1535F27D979F600806EFE /* GLIMSTIC.TTF */,
 			);
 			path = ZombieConga;
 			sourceTree = "<group>";
@@ -156,6 +167,7 @@
 				901F34C027D06C5F0082D125 /* hitCat.wav in Resources */,
 				901F34AD27D04EDF0082D125 /* Assets.xcassets in Resources */,
 				901F34C127D06C5F0082D125 /* hitCatLady.wav in Resources */,
+				90A1536027D97A9000806EFE /* GLIMSTIC.TTF in Resources */,
 				901F34B027D04EDF0082D125 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A1535E27D9727E00806EFE /* MainMenuScene.swift in Sources */,
+				90A1535C27D96D9C00806EFE /* GameOverScene.swift in Sources */,
 				901F34A627D04EDD0082D125 /* GameScene.swift in Sources */,
 				901F34A827D04EDD0082D125 /* GameViewController.swift in Sources */,
 				901F34A027D04EDD0082D125 /* AppDelegate.swift in Sources */,
@@ -320,6 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZombieConga/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,6 +364,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZombieConga/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
